@@ -20,11 +20,13 @@ crontab -l
 crontab -e
 0 1 * * * /root/server/sendLog4js.sh > /dev/null 2>&1
 
+netstat -lntp
+kill -9 进程号
 
-
-
-
-
+防火墙
+ufw status
+ufw allow from ip
+ufw allow port
 
 
 
