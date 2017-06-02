@@ -31,7 +31,6 @@ ios设备推送证书命令
 openssl x509 -in cert.cer -inform DER -outform PEM -out cert.pem
 openssl pkcs12 -in key.p12 -out key.pem -nodes
 
-
 gcc 升级
 1. 首先查看当前gcc的版本： gcc --version （一般是4.6左右）
 2. Adding the toolchain/test PPA:
