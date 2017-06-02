@@ -11,7 +11,6 @@ allGetCount=`expr $get1 + $get2 + $get3 + $get4`
 发送邮件
 sendEmail -s smtp.ym.163.com -u title -t wuchangpeng@haizitong.com -f notice0@haizitong.cn -xu 邮箱账号 -xp 邮箱密码 -o message-content-type=html message-charset=utf-8 message-file=test.txt
 
-
 locate 文件名
 find ./ | xargs -n grep "字段"
 
@@ -28,6 +27,9 @@ ufw status
 ufw allow from ip
 ufw allow port
 
+ios设备推送证书命令
+openssl x509 -in cert.cer -inform DER -outform PEM -out cert.pem
+openssl pkcs12 -in key.p12 -out key.pem -nodes
 
 
 
