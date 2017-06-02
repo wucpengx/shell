@@ -15,3 +15,17 @@ sendEmail -s smtp.ym.163.com -u title -t wuchangpeng@haizitong.com -f notice0@ha
 locate 文件名
 find ./ | xargs -n grep "字段"
 
+定时执行脚本 crontab 
+crontab -l
+crontab -e
+0 1 * * * /root/server/sendLog4js.sh > /dev/null 2>&1
+
+
+
+
+
+
+
+
+
+
