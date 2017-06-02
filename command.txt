@@ -32,4 +32,20 @@ openssl x509 -in cert.cer -inform DER -outform PEM -out cert.pem
 openssl pkcs12 -in key.p12 -out key.pem -nodes
 
 
+gcc 升级
+1. 首先查看当前gcc的版本： gcc --version （一般是4.6左右）
+2. Adding the toolchain/test PPA:
+     add-apt-repository ppa:ubuntu-toolchain-r/test
+3. 更新，然后安装即可：
+     apt-get update
+     apt-get install gcc-4.8
+     apt-get install g++-4.8
+     
+rm /usr/bin/gcc
+ln -s /usr/bin/gcc-4.8 /usr/bin/gcc
+rm /usr/bin/g++
+ln -s /usr/bin/g++-4.8 /usr/bin/g++
+
+
+
 
