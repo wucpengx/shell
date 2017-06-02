@@ -45,6 +45,8 @@ ln -s /usr/bin/gcc-4.8 /usr/bin/gcc
 rm /usr/bin/g++
 ln -s /usr/bin/g++-4.8 /usr/bin/g++
 
+du -sh *
+df -h
 
 
 
