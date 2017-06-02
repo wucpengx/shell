@@ -1,0 +1,17 @@
+#获取日期函数 昨天 2017-06-01
+currentDay=`date -d 'yesterday' +20%y-%m-%d` 
+currentDay=`date -d 'next day' +20%y-%m-%d` 
+currentDay=`date -d 'last day' +20%y-%m-%d` 
+currentDay=`date -d 'last month' +20%y-%m-%d` 
+currentDay=`date -d 'next month' +20%y-%m-%d` 
+
+计算表达式
+allGetCount=`expr $get1 + $get2 + $get3 + $get4`
+
+发送邮件
+sendEmail -s smtp.ym.163.com -u title -t wuchangpeng@haizitong.com -f notice0@haizitong.cn -xu 邮箱账号 -xp 邮箱密码 -o message-content-type=html message-charset=utf-8 message-file=test.txt
+
+
+locate 文件名
+find ./ | xargs -n grep "字段"
+
