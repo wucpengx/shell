@@ -22,6 +22,9 @@ crontab -e
 netstat -lntp
 kill -9 进程号
 
+ping ip/dns
+telnet ip port
+
 防火墙
 ufw status
 ufw allow from ip
