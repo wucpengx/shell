@@ -64,5 +64,16 @@ cat /proc/cpuinfo| grep "cpu cores"| uniq
 # 查看逻辑CPU的个数
 cat /proc/cpuinfo| grep "processor"| wc -l
 
-
+git status
+git branch
+git checkout -b name
+git merge 
+git add
+git commit -m"ssss"
+git push origin "222"
+git pull origin "222"
+git rm file
+push所有tag，命令格式为：git push [origin] --tags
+git push --tags
+git push origin --tags
 
