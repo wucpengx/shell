@@ -81,3 +81,7 @@ apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-esse
 apt-get install ffmpeg
 apt-get install imagemagick
 apt-get install graphicsmagick
+
+# 匹配查看日志
+egrep ' [0-9]{4,} ms' log.log_2017-08-26
+
