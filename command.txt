@@ -87,3 +87,6 @@ egrep ' [0-9]{4,} ms' log.log_2017-08-26
 
 mongodb shell 查看数据时 限制条数设置
 DBQuery.shellBatchSize = 20
+
+fdisk -l
+mount /dev/xvdb /mnt
