@@ -87,6 +87,8 @@ egrep ' [0-9]{4,} ms' log.log_2017-08-26
 
 mongodb shell 查看数据时 限制条数设置
 DBQuery.shellBatchSize = 20
+#查找指定字段 语句
+db.collection.distinct(field, query, options)
 
 fdisk -l
 mkfs.ext3 /dev/xvdb
