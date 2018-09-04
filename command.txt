@@ -97,3 +97,21 @@ mount /dev/xvdb /mnt
 apt install coffeescript
 npm install -g coffee-script
 npm install -g express-generator
+
+# umount -l /mnt/hda5
+来卸载设备。选项 –l 并不是马上umount，而是在该目录空闲后再umount。还可以先用命令 ps aux 来查看占用设备的程序PID，然后用命令kill来杀死占用设备的进程，这样就umount的非常放心了。
+
+ 方法一：
+fuser -m -v /nfs_old/
+          用户  进程号  权限   命令
+/nfs_old/:   root  2699    ..c..  bash
+          root  2999    ..c..  su
+如上所示，有两个进程占用了，将其kill掉，再重新取消挂载。
+kill -9 2699 2999
+umount /nfs_old/
+
+方法二：
+umount  -l  /nfs_old/
+
+方法三：
+fuser -km /nfs_old/
